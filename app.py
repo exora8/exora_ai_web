@@ -5,10 +5,10 @@ from pydub.playback import play
 import os
 import re
 from together import Together
-# Inisialisasi Together AI
-api_key = os.getenv("TOGETHER_API_KEY")
-client = Together(api_key=api_key)
 
+
+# Inisialisasi Together AI
+client = Together(api_key="4eb3afd18344fdf6c699280f9e5e2f08ba5d4c2cc9989b55e7c5c14910af9706")
 
 def clean_text(text):
     """Hapus tag XML/HTML dari output AI"""
